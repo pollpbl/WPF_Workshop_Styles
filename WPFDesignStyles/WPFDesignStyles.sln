@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFDesignStyles", "WPFDesignStyles\WPFDesignStyles\WPFDesignStyles.csproj", "{2E1A33F7-D251-4E9D-9AA7-356616D19389}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFDesignStyles.BusinessLogic", "WPFDesignStyles\WPFDesignStyles.BusinessLogic\WPFDesignStyles.BusinessLogic.csproj", "{E8F2F426-1A33-4A81-881E-9345F217FC58}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFDesignStyles.Common", "WPFDesignStyles\WPFDesignStyles.Common\WPFDesignStyles.Common.csproj", "{69D76D6B-F701-43EA-AF39-4C39BF5914A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFDesignStyles.Common.Wpf", "WPFDesignStyles\WPFDesignStyles.Common.Wpf\WPFDesignStyles.Common.Wpf.csproj", "{8CC0ED73-6642-4361-850D-198169E7A0D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFDesignStyles.Dependencies", "WPFDesignStyles\WPFDesignStyles.Dependencies\WPFDesignStyles.Dependencies.csproj", "{345AB6A7-F0D8-40FC-B008-4DAF8B58D4BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFDesignStyles.Resources", "WPFDesignStyles\WPFDesignStyles.Resources\WPFDesignStyles.Resources.csproj", "{B026A5B6-C458-4071-A5AB-042E269F395B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2E1A33F7-D251-4E9D-9AA7-356616D19389}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E1A33F7-D251-4E9D-9AA7-356616D19389}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E1A33F7-D251-4E9D-9AA7-356616D19389}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E1A33F7-D251-4E9D-9AA7-356616D19389}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8F2F426-1A33-4A81-881E-9345F217FC58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8F2F426-1A33-4A81-881E-9345F217FC58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8F2F426-1A33-4A81-881E-9345F217FC58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8F2F426-1A33-4A81-881E-9345F217FC58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69D76D6B-F701-43EA-AF39-4C39BF5914A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69D76D6B-F701-43EA-AF39-4C39BF5914A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69D76D6B-F701-43EA-AF39-4C39BF5914A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69D76D6B-F701-43EA-AF39-4C39BF5914A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CC0ED73-6642-4361-850D-198169E7A0D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CC0ED73-6642-4361-850D-198169E7A0D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CC0ED73-6642-4361-850D-198169E7A0D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CC0ED73-6642-4361-850D-198169E7A0D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{345AB6A7-F0D8-40FC-B008-4DAF8B58D4BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{345AB6A7-F0D8-40FC-B008-4DAF8B58D4BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{345AB6A7-F0D8-40FC-B008-4DAF8B58D4BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{345AB6A7-F0D8-40FC-B008-4DAF8B58D4BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B026A5B6-C458-4071-A5AB-042E269F395B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B026A5B6-C458-4071-A5AB-042E269F395B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B026A5B6-C458-4071-A5AB-042E269F395B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B026A5B6-C458-4071-A5AB-042E269F395B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DF274B18-DEFD-467A-98F3-E90654932FDC}
+	EndGlobalSection
+EndGlobal
