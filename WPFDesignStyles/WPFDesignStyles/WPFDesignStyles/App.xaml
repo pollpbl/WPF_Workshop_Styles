@@ -4,6 +4,104 @@
              xmlns:local="clr-namespace:WPFDesignStyles"
              StartupUri="Windows\MainWindow.xaml">
     <Application.Resources>
-         
+
+        <!-- DialogButtonStyle -->
+        <Style TargetType="Button" x:Key="DialogButtonStyle">
+            <Style.Setters>
+                <Setter Property="Margin" Value="4"/>
+                <Setter Property="Width" Value="150"/>
+                <Setter Property="Height" Value="24"/>
+            </Style.Setters>
+         </Style>
+
+        <!-- HyperlinkTextBlockStyle -->
+        <Style TargetType="TextBlock" x:Key="HyperlinkTextBlockStyle">
+            <Style.Setters>
+                <Setter Property="FontWeight" Value="Bold"/>
+                <Setter Property="Background" Value="#ff00ff"></Setter>
+            </Style.Setters>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Trigger.Setters>
+                        <Setter Property="Foreground" Value="#ff0000cd"/>
+                        <Setter Property="TextDecorations" Value="Underline"/>
+                    </Trigger.Setters>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <!-- TextBoxStyle -->
+        <Style TargetType="TextBox" x:Key="TextBoxStyle">
+            <Style.Setters>
+                <Setter Property="BorderThickness" Value="0"/>
+                <Setter Property="BorderBrush" Value="Transparent"/>
+                <Setter Property="Background" Value="Transparent"/>
+            </Style.Setters>
+        </Style>
+
+        <!-- GroupBoxStyle -->
+        <Style TargetType="GroupBox" x:Key="GroupBoxStyle">
+            <Style.Setters>
+                <Setter Property="Padding" Value="10"/>
+            </Style.Setters>
+        </Style>
+
+
+        <!-- PlaceHolderTextBoxStyle -->
+        <Style x:Key="PlaceHolderTextBoxStyle" TargetType="{x:Type TextBox}" BasedOn="{StaticResource {x:Type TextBox}}">
+            <Style.Setters>
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="{x:Type TextBox}">
+                            <DockPanel>
+                                <Grid>
+                                    <TextBox Text="{Binding Text, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                             x:Name="textSource"
+                                             Background="Transparent"
+                                             Panel.ZIndex="2"
+                                             BorderThickness="5"
+                                             BorderBrush="#ff00ced1">
+                                    </TextBox>
+
+                                    <TextBox Text="{TemplateBinding Tag}" Background="{TemplateBinding Background}" Panel.ZIndex="1">
+                                        <TextBox.Style>
+                                            <Style TargetType="{x:Type TextBox}">
+                                                <Setter Property="Foreground" Value="Transparent" />
+                                                <Setter Property="Padding" Value="2" />
+                                                <Setter Property="BorderThickness" Value="1"/>
+                                                <Style.Triggers>
+                                                    <DataTrigger Binding="{Binding Text, Source={x:Reference textSource}}" Value="">
+                                                        <Setter Property="Foreground" Value="#ffd3d3d3" />
+                                                    </DataTrigger>
+                                                </Style.Triggers>
+                                            </Style>
+                                        </TextBox.Style>
+                                    </TextBox>
+                                </Grid>
+
+                                <Button>
+                                    <Button.Style>
+                                        <Style TargetType="Button">
+                                            <Style.Setters>
+                                                <Setter Property="BorderBrush" Value="Transparent" />
+                                                <Setter Property="BorderThickness" Value="0" />
+                                                <Setter Property="Background" Value="Transparent" />
+                                            </Style.Setters>
+                                        </Style>
+                                    </Button.Style>
+                                    <Button.Content>
+                                        <Image Source="Images/iconfinder_search.png" DockPanel.Dock="Right" />
+                                    </Button.Content>
+                                </Button>
+
+                            </DockPanel>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style.Setters>
+        </Style>
+
+
+
     </Application.Resources>
 </Application>
